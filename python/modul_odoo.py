@@ -22,7 +22,7 @@ class Calculadora:
         self.capital_inicial = None
         self.capital_final = None
         self.interes = None
-        self.temps = None
+        self.temps = 3
         self.retencio = None
 
 
@@ -34,3 +34,4 @@ if __name__ == '__main__':
 
     # Creacio de l'objecte
     calc = Calculadora()
+	
