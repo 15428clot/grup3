@@ -1,17 +1,3 @@
-"""
-Una calculadora d'interés compost que a partir del capital inicial, el tipus d'interés anual, el temps en anys
-i la retenció aplicada, mostri els capital final obtingut, els interessos generats i la retenció aplicada
-
-Interés compuesto es el que resulta cuando los intereses producidos por un capital en cada periodo se agregan al capital
-para calcular los intereses del periodo siguiente.
-Con esta aplicación podemos calcular el capital inicial, el capital final, el tiempo, el tipo de interés o los intereses
-de una operación de interés compuesto.
-
-Ejemplo: Calcular el valor de los intereses que tenemos que pagar para devolver 100.000 euros al 8,65% anual durante 15 años.
-Resultado: 247.093,0837 euros
-
-"""
-
 
 
 class Calculadora:
@@ -19,19 +5,28 @@ class Calculadora:
     def __init__(self):
 
         # Variables de clase
-        self.capital_inicial = None
+        self.capital_inicial = 100000
         self.capital_final = None
-        self.interes = None
-        self.temps = 3
+        self.interes = 0.0865
+        self.temps = 15
         self.retencio = None
+        self.interesos = 0;
 
+    def cap_final(self):
+        self.capital_final = self.capital_inicial * ((1 + self.interes) ** self.temps)
+        print self.capital_final
 
+    def int_generats(self):
+        interesos = self.capital_final - self.capital_inicial
+        print interesos
 
-
+    #def ret_aplicada(selfself):
 
 
 if __name__ == '__main__':
 
     # Creacio de l'objecte
     calc = Calculadora()
+    calc.cap_final()
+    calc.int_generats()
 	
