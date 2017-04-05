@@ -1,0 +1,18 @@
+root@debm06es:/usr/lib/python2.7/dist-packages/openerp/addons/nif
+
+/usr/lib/python2.7/dist-packages/odoo/addons/_____nomdelfitxerdepython
+
+dins de static, description, per posar una icona 
+
+
+__init__.py
+en aquest fitxer cal fer un import.
+
+import ____.py
+
+
+
+
+
+__openerp__.py
+es pot fer odoo.py  scaffold test -> crea directoris i arxius 
